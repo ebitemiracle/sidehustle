@@ -11,7 +11,7 @@ if(!is_numeric($voter_age)){
 
 // Check if user is an adult
 if($voter_age<18){
-   echo "You must be above 18 to be eligible to vote." ;
+   echo "You must be 18 or above to be eligible to vote." ;
    exit();
 }
 
@@ -27,6 +27,6 @@ if($voter_ward!=="020"){
     exit();
 }
 // Voter makes it here if they were validated successfully without any problems
-echo "Hi buddy, you are eligible to vote. Your information are: Age: ".$voter_age.", PVC status: ".($voter_have_pvc==true?"Valid":"Invalid")." Ward: ".$voter_ward;
+echo "Hi buddy, you are eligible to vote. Your information are: Age: ".$voter_age.", PVC status: ".($voter_have_pvc==true?"Valid":"Invalid").", Ward: ".$voter_ward;
 // End
 ?>
