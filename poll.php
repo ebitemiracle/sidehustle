@@ -27,6 +27,6 @@ if($voter_ward!=="020"){
     exit();
 }
 // Voter makes it here if they were validated successfully without any problems
-echo "Hi buddy, you are eligible to vote. Your information are: Age: ".$voter_age.", PVC status: ".($voter_have_pvc=true?"Valid":"Invalid")." Ward: ".$voter_ward;
+echo "Hi buddy, you are eligible to vote. Your information are: Age: ".$voter_age.", PVC status: ".($voter_have_pvc==true?"Valid":"Invalid")." Ward: ".$voter_ward;
 // End
 ?>
